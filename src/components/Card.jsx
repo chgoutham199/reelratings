@@ -11,7 +11,7 @@ export default function Card({result}) {
         </Image>
        <div className="">
           <h2 className="text-lg font-bold truncate">{result.title ||result.name}</h2>
-          <p className="line-clamp-2 text-md">{result.overview}</p> 
+          <p className="line-clamp-3 text-md">{result.overview}</p> 
           <p className="flex items-center">{result.release_date || result.first_air_date}
           <FaRegThumbsUp className="h-5 mr-1 ml-3" /> {result.vote_count}
           <FaStar className="h-5 mr-1 ml-3" />{result.vote_average.toFixed(2)}
