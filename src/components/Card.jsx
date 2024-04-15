@@ -9,7 +9,7 @@ export default function Card({result}) {
       <Link href={`/movie/${result.id}`} >
         <Image src={`https://image.tmdb.org/t/p/original/${result.backdrop_path || result.poster_path}`} alt={result.title ||result.name} width={500} height={300} className="sm:rounded-t-lg group-hover:opacity-80 transition-opacity duration-300 " >
         </Image>
-       <div className="">
+       <div className="pr-1 pl-2">
           <h2 className="text-lg font-bold truncate">{result.title ||result.name}</h2>
           <p className="line-clamp-3 text-md">{result.overview}</p> 
           <p className="flex items-center">{result.release_date || result.first_air_date}
